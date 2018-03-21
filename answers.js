@@ -32,25 +32,49 @@
 // Hint: You will need to use Math.random()
 
 
-function kittenRandom() {
-	for (var i = 1; i <= 20; i++) {
-		if (i % 2 === 0) {
-			var num = Math.floor(Math.random() * 3);
-switch (num) {
-	case 0:
-		console.log('human...why you taking pictures of me?');
-		break;
-	case 1:
-		console.log('the catnip made me do it');
-		break;
-	case 2:
-		console.log('why does the red dot always get away')
-		break;
-			}
-		}
+// function kittenRandom() {
+// 	for (var i = 1; i <= 20; i++) {
+// 		if (i % 2 === 0) {
+// 			var num = Math.floor(Math.random() * 3);
+// switch (num) {
+// 	case 0:
+// 		console.log('human...why you taking pictures of me?');
+// 		break;
+// 	case 1:
+// 		console.log('the catnip made me do it');
+// 		break;
+// 	case 2:
+// 		console.log('why does the red dot always get away')
+// 		break;
+// 			}
+// 		}
+// 	}
+// }
+// kittenRandom();
+
+// Fizz Buzz
+// Write a javascript application that logs all numbers from 1 - 100.
+// If a number is divisible by 3 log "Fizz" instead of the number.
+// If a number is divisible by 5 log "Buzz" instead of the number.
+// If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
+
+function fizzBuzz() {
+for (let i = 1; i <= 20; i++) {
+	if (i % 3 === 0 && i % 5 === 0) {
+		console.log('FizzBuzz');
+} else if (i % 3 === 0) {
+	console.log('Fizz');
+} else if (i % 5 === 0) {
+	console.log('Buzz');
+} else {
+	console.log(i)
 	}
 }
-kittenRandom();
+}
+
+fizzBuzz();
+
+
 
 
 
