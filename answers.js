@@ -105,31 +105,110 @@
 
 // 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 
-var turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+// var turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
 
 
-// 2. Use a for loop to call toUpperCase() on each of them and print out the result.
+// // 2. Use a for loop to call toUpperCase() on each of them and print out the result.
 
-var turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+// var turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
 
-function turtleUpper (array) {
-for (var i = 0; i <= turtles.length-1; i++) {
-	console.log(array[i].toUpperCase());
+// function turtleUpper (array) {
+// for (var i = 0; i <= turtles.length-1; i++) {
+// 	console.log(array[i].toUpperCase());
+// }
+// }
+
+// turtleUpper(turtles);
+
+// Return of the Closets
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// Alien Attire
+// 1. Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+// var kristynsShoe = kristynsCloset.shift();
+
+// thomsCloset[2].push(kristynsShoe);
+// console.log(thomsCloset);
+
+
+// Dress Us Up
+// 1. Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+// console.log(`Kristyn is wearing ${kristynsCloset[1]}, ${kristynsCloset[3]}, and ${kristynsCloset[5]}.`)
+
+let shirtLength = thomsCloset[0].length;
+let shirt = Math.floor(Math.random()* shirtLength)
+
+let pantsLength = thomsCloset[1].length;
+let pants = Math.floor(Math.random() * pantsLength)
+
+console.log(`${thomsCloset[0][shirt]}`);
+console.log(`${thomsCloset[1][pants]}`);
+
+console.log(`Thom is wearing ${thomsCloset[0][shirt]} and ${thomsCloset[1][pants]}.`)
+// ---------
+
+// DO NOT USE THIS - TRIED TO CREATE RANDOMIZATION W/ FOR LOOP
+// let shirtLength = thomsCloset[0].length;
+// let shirt = Math.floor(Math.random()* shirtLength)
+
+// let pantsLength = thomsCloset[1].length;
+// // let pants = Math.floor(Math.random() * pantsLength)
+
+// function thomOutfitRandom() {
+// 	for (var i = 0; i <= thomsCloset[1].length; i++) {
+// 			var pants = Math.floor(Math.random() * pantsLength);
+// 		}
+// 	}
+// console.log(pants);
+
+// console.log(`${thomsCloset[1][pants]}`);
+// DO NOT USE ^ 
+// ------------
+
+// DIRTY LAUNDRY
+// Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+
+function laundryKristyn() {
+
+for (i = 0; i < kristynsCloset.length; i++) {
+	console.log(`WHIRR: Now washing ${kristynsCloset[i]}.`)
 }
 }
 
-turtleUpper(turtles);
+laundryKristyn();
 
-
-
-
-
-
-
-
-
-
-
-
-
+// INVENTORY
+// Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
 
