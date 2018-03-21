@@ -200,15 +200,45 @@ console.log(`Thom is wearing ${thomsCloset[0][shirt]} and ${thomsCloset[1][pants
 // DIRTY LAUNDRY
 // Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 
-function laundryKristyn() {
+// function laundryKristyn() {
 
-for (i = 0; i < kristynsCloset.length; i++) {
-	console.log(`WHIRR: Now washing ${kristynsCloset[i]}.`)
-}
-}
+// for (let i = 0; i < kristynsCloset.length; i++) {
+// 	console.log(`WHIRR: Now washing ${kristynsCloset[i]}.`)
+// }
+// }
 
-laundryKristyn();
+// laundryKristyn();
 
 // INVENTORY
 // Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
+
+function inventoryThom() {
+	for (let i = 0; i < thomsCloset.length; i++)
+		 for(x = 0; x < thomsCloset[i].length; x++) {
+		console.log(`Thoms' closet includes ${thomsCloset[i][x]}.`);
+}
+}
+inventoryThom();
+
+
+// CREATING ANOTHER EXAMPLE ON MY OWN:
+// let clothes = ['shirt', 'pants', 'hat', 'gloves'];
+// let colors = ['yellow', 'blue', 'green', 'red'];
+// let animal = 'turtle';
+
+
+// function inventory (array) {
+// 	for (let i = 0; i < array.length; i ++) {
+// 		console.log(`${array[i]}`);
+// 	}
+// }
+
+// inventory(animal); 
+
+
+
+
+
+
+
 
