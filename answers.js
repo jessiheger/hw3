@@ -122,17 +122,17 @@
 
 // Return of the Closets
 
-const kristynsCloset = [
-  "left shoe",
-  "cowboy boots",
-  "right sock",
-  "GA hoodie",
-  "green pants",
-  "yellow knit hat",
-  "marshmallow peeps"
-];
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
 
-// Thom's closet is more complicated. Check out this nested data structure!!
+// // Thom's closet is more complicated. Check out this nested data structure!!
 const thomsCloset = [
   [
     // These are Thom's shirts
@@ -167,19 +167,20 @@ const thomsCloset = [
 
 // console.log(`Kristyn is wearing ${kristynsCloset[1]}, ${kristynsCloset[3]}, and ${kristynsCloset[5]}.`)
 
-let shirtLength = thomsCloset[0].length;
-let shirt = Math.floor(Math.random()* shirtLength)
+// let shirtLength = thomsCloset[0].length;
+// let shirt = Math.floor(Math.random()* shirtLength)
 
-let pantsLength = thomsCloset[1].length;
-let pants = Math.floor(Math.random() * pantsLength)
+// let pantsLength = thomsCloset[1].length;
+// let pants = Math.floor(Math.random() * pantsLength)
 
-console.log(`${thomsCloset[0][shirt]}`);
-console.log(`${thomsCloset[1][pants]}`);
+// console.log(`${thomsCloset[0][shirt]}`);
+// console.log(`${thomsCloset[1][pants]}`);
 
-console.log(`Thom is wearing ${thomsCloset[0][shirt]} and ${thomsCloset[1][pants]}.`)
+// console.log(`Thom is wearing ${thomsCloset[0][shirt]} and ${thomsCloset[1][pants]}.`)
+
 // ---------
-
 // DO NOT USE THIS - TRIED TO CREATE RANDOMIZATION W/ FOR LOOP
+
 // let shirtLength = thomsCloset[0].length;
 // let shirt = Math.floor(Math.random()* shirtLength)
 
@@ -212,15 +213,17 @@ console.log(`Thom is wearing ${thomsCloset[0][shirt]} and ${thomsCloset[1][pants
 // INVENTORY
 // Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
 
-function inventoryThom() {
-	for (let i = 0; i < thomsCloset.length; i++)
-		 for(x = 0; x < thomsCloset[i].length; x++) {
-		console.log(`Thoms' closet includes ${thomsCloset[i][x]}.`);
-}
-}
-inventoryThom();
+// function inventoryThom() {
+// 	for (let i = 0; i < thomsCloset.length; i++) {
+// 		 for (let x = 0; x < thomsCloset[i].length; x++) {
+// 		console.log(`Thoms' closet includes ${thomsCloset[i][x]}.`);
+// }
+// }
+// }
+// inventoryThom();
 
 
+// ------
 // CREATING ANOTHER EXAMPLE ON MY OWN:
 // let clothes = ['shirt', 'pants', 'hat', 'gloves'];
 // let colors = ['yellow', 'blue', 'green', 'red'];
@@ -234,8 +237,31 @@ inventoryThom();
 // }
 
 // inventory(animal); 
+// ---------
 
+// Multiples of 3 and 5
+// Find the sum of all the multiples of 3 or 5 below 1000.
 
+// let sum = 0;
+// for (let i = 0; i <1000; i++) {
+// 	if (i % 3 === 0 || i % 5 === 0) {
+//     sum += i;
+// 	}
+// }
+
+// console.log(`${sum}`);
+
+// Triangles
+
+// let triangle = ''
+// function triangleBuilder(n) {
+// 	for (var i = 0; i <n; i++) {
+// 		triangle += '#';
+// 	console.log(triangle);
+// }
+// }
+
+// triangleBuilder(7);
 
 
 
